@@ -12,7 +12,7 @@
 
 ### Bonus (Docker 建不起來)
 
-| Challenge                                      | Author     | Difficulty | Solves |
-| ---------------------------------------------- | ---------- | ---------- | -----: |
-| [i am confusion](./web/i-am-confusion)         | richighimi | medium     |    113 |
-| [Prisoner Processor](./web/prisoner-processor) | ghostccamm | hard       |     17 |
+| Challenge                                  | Author     | Difficulty | Solves |
+| ------------------------------------------ | ---------- | ---------- | -----: |
+| [i am confusion](./i-am-confusion)         | richighimi | medium     |    113 |
+| [Prisoner Processor](./prisoner-processor) | ghostccamm | hard       |     17 |
