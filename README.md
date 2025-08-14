@@ -1,14 +1,5 @@
-<div align="center">
-
-![banner][banner]
-
-Files for DownUnderCTF 2024 Web Challenges
-
-</div>
-
+# Files for DownUnderCTF 2024 Web Challenges
 ---
-
-# web
 |                   Challenge                    |    Author    | Difficulty | Solves |
 | ---------------------------------------------- | ------------ | ---------- | -----: |
 | [co2](./web/co2)                               | n00b.master. | easy       |    289 |
