@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  # LocalStack 模擬 AWS（提供 S3 / CloudFront API）
+  localstack:
+    image: localstack/localstack:latest
+    container_name: localstack_main
+    ports:
+      - "4566:4566" # LocalStack Edge Port (AWS API Gateway)
+      - "4571:4571"
+    environment:
+      - SERVICES=s3
+      - DEBUG=1
+      - DATA_DIR=/tmp/localstack/data
+      - AWS_ACCESS_KEY_ID=test
+      - AWS_SECRET_ACCESS_KEY=test
+      - AWS_DEFAULT_REGION=us-east-1
+    volumes:
+      - "./.localstack:/tmp/localstack"
+
+  # Nginx 伺服器，模擬題目的網站
+  nginx:
+    image: nginx:alpine
+    container_name: bucketwars_nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./site_files.bk:/usr/share/nginx/html:ro
+########################################
+# host 在 http://localhost:8080        #
+# ye 用 chatgpt 生的，不保證能不能打出來 #
+########################################

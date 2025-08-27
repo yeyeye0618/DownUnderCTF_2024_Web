@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  web:
+    build: ./challenge
+    container_name: playing-backcourt
+    ports:
+      - "8000:5000"
+    environment:
+      FLASK_APP: app
+    volumes:
+      - ./challenge:/app
